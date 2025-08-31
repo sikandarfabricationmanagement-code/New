@@ -2,39 +2,49 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
-import { ShieldCheck, ThermometerSun, Wind, Waves, VolumeX, Leaf } from 'lucide-react';
+import { ShieldCheck, Rows, Zap, Award, CheckCircle, Grill, GitBranch, Layers } from 'lucide-react';
 
 export default function FeaturesPage() {
   const features = [
     {
-      icon: <Wind className="h-10 w-10 text-primary" />,
-      title: 'Durable & Weather-Resistant',
-      description: 'Our uPVC profiles are built to withstand harsh weather conditions, from scorching sun to heavy rain, ensuring longevity and performance without fading, warping, or cracking.',
+      icon: <Rows className="h-10 w-10 text-primary" />,
+      title: 'Wide Range',
+      description: 'Gluven uPVC offers a diverse range of products to cater to various preferences and requirements. Whether customers are seeking traditional or modern designs, different sizes, or specific functionalities, our wide range ensures they find the perfect fit for their needs.',
     },
     {
-      icon: <ThermometerSun className="h-10 w-10 text-primary" />,
-      title: 'Energy Efficient',
-      description: 'Excellent thermal insulation properties help maintain a consistent indoor temperature, reducing your reliance on heating and cooling systems and lowering energy costs.',
+      icon: <Award className="h-10 w-10 text-primary" />,
+      title: 'High-Quality Compound Formulation',
+      description: 'We take pride in using only the finest raw materials and employing an advanced compound formulation process. This commitment to quality ensures that Gluven uPVC products deliver exceptional performance and durability over the long term.',
     },
     {
-      icon: <ShieldCheck className="h-10 w-10 text-primary" />,
-      title: 'Enhanced Security',
-      description: 'Fitted with multi-point locking systems and reinforced frames, our products provide superior security for your peace of mind, protecting your home and family.',
+      icon: <CheckCircle className="h-10 w-10 text-primary" />,
+      title: 'In-Built Gasket Systems',
+      description: 'Experience superior insulation, noise reduction, and weather resistance with our innovative in-built gasket systems. These systems contribute to a more comfortable and energy-efficient environment indoors.',
     },
     {
-      icon: <VolumeX className="h-10 w-10 text-primary" />,
-      title: 'Sound Insulation',
-      description: 'The multi-chambered design of our uPVC profiles, combined with double or triple glazing, significantly reduces outside noise, creating a quieter and more peaceful indoor environment.',
+      icon: <Zap className="h-10 w-10 text-primary" />,
+      title: 'Shiny Finish',
+      description: 'Elevate the visual appeal of your living spaces with our elegant shiny finish. The glossy surface not only adds a touch of sophistication but is also easy to clean and maintain, keeping your uPVC products looking pristine year after year.',
     },
     {
-        icon: <Waves className="h-10 w-10 text-primary" />,
-        title: 'Water Resistance',
-        description: 'Engineered with advanced drainage systems, our uPVC windows and doors offer excellent protection against water leakage, keeping your home dry even during heavy downpours.',
+        icon: <ShieldCheck className="h-10 w-10 text-primary" />,
+        title: '100% Lead-Free',
+        description: 'Your health and safety matter to us. Gluven uPVC is crafted without any lead content, ensuring that your well-being and the well-being of your loved ones are always a top priority.',
     },
     {
-        icon: <Leaf className="h-10 w-10 text-primary" />,
-        title: 'Eco-Friendly Material',
-        description: 'uPVC is a recyclable material that requires less energy to produce than other options. Choosing our products is a step towards a more sustainable and environmentally friendly home.',
+        icon: <Grill className="h-10 w-10 text-primary" />,
+        title: 'Grill Option',
+        description: 'Enhance the security and aesthetics of your space with our convenient grill option. Our uPVC products are designed to seamlessly accommodate grills, providing an extra layer of protection while maintaining the beauty of your windows and doors.',
+    },
+    {
+        icon: <GitBranch className="h-10 w-10 text-primary" />,
+        title: 'High Impact Resistance',
+        description: 'Life is unpredictable, but your windows and doors don\'t have to be. Gluven uPVC boasts exceptional impact resistance, ensuring that your investment remains intact and functional even in the face of accidental impacts.',
+    },
+    {
+        icon: <Layers className="h-10 w-10 text-primary" />,
+        title: 'Multiple Laminate Options',
+        description: 'Personalize your space to reflect your unique style and taste. With a variety of laminate options to choose from, you can match your Gluven uPVC products seamlessly with your interior or exterior design, creating a harmonious and inviting atmosphere.',
     }
   ];
 
