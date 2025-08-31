@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 
 export function WhatsAppButton({ phoneNumber }: { phoneNumber: string }) {
-  const sanitizedPhoneNumber = phoneNumber.replace(/\+/g, "");
+  const sanitizedPhoneNumber = phoneNumber.replace(/[^0-9]/g, "");
   return (
     <Link
       href={`https://wa.me/${sanitizedPhoneNumber}`}
