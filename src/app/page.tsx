@@ -54,13 +54,13 @@ export default function Home() {
     {
       title: 'uPVC Casement Window Profiles',
       description: 'A timeless and elegant choice, our casement profiles are designed for windows hinged on the side to open outward for excellent ventilation and a classic look.',
-      image: '/images/casement-windows.jpg',
+      image: '/images/window.jpg',
       hint: 'upvc casement window'
     },
     {
       title: 'uPVC Combination Window Profiles',
       description: 'Combine various window styles, like casement and fixed, into a single, adaptable unit with our versatile combination profiles.',
-      image: '/images/combination-window-2.jpeg',
+      image: '/images/combination-window-2.jpg',
       hint: 'upvc combination window'
     },
   ];

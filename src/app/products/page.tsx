@@ -13,12 +13,12 @@ export default function ProductsPage() {
           {
             title: 'Sliding Window Profiles',
             description: 'Our profiles for sliding windows offer a sleek, modern solution. They are designed for effortless operation and are ideal for spaces with limited clearance, creating a seamless connection between inside and out.',
-            image: '/images/sliding-window-2.jpg'
+            image: '/images/sliding-window-1.avif'
           },
           {
             title: 'Casement Window Profiles',
             description: 'A timeless and elegant choice. Our profiles for casement windows are designed to be hinged on one side and open outward, allowing for excellent ventilation and easy cleaning.',
-            image: '/images/casement-window-2.jpg'
+            image: '/images/window.jpg'
           },
           {
             title: 'Combination Window Profiles',

@@ -32,7 +32,7 @@ export function Header() {
           Noaah
         </Link>
         
-        <nav className="hidden md:flex items-center gap-1">
+        <nav className="hidden lg:flex items-center gap-1">
           {navLinks.map((link) => (
             <Button variant="ghost" asChild key={link.href}>
               <Link href={link.href} className="relative group">
@@ -43,7 +43,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-2">
+        <div className="hidden lg:flex items-center gap-2">
             <Button asChild>
                 <Link href="/Brochure.pdf" download>
                 <Download className="mr-2 h-4 w-4" />
@@ -55,7 +55,7 @@ export function Header() {
         </div>
 
         <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-          <SheetTrigger asChild className="md:hidden">
+          <SheetTrigger asChild className="lg:hidden">
             <Button variant="ghost" size="icon">
               <Menu className="h-6 w-6" />
               <span className="sr-only">Open menu</span>
