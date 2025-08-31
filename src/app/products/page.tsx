@@ -9,37 +9,37 @@ export default function ProductsPage() {
     {
       title: 'uPVC Casement Windows',
       description: 'Classic, elegant, and versatile windows that open outwards. Available in various styles and finishes to suit any home. They offer excellent ventilation and an unobstructed view.',
-      image: 'https://picsum.photos/600/401',
+      image: 'https://picsum.photos/600/400?random=1',
       hint: 'casement window'
     },
     {
       title: 'uPVC Sliding Doors',
       description: 'Smooth operation and space-saving design, perfect for patios and balconies. Our sliding doors glide effortlessly and provide a seamless transition between indoors and outdoors.',
-      image: 'https://picsum.photos/601/400',
+      image: 'https://picsum.photos/600/400?random=2',
       hint: 'sliding door'
     },
     {
       title: 'uPVC Tilt & Turn Windows',
       description: 'Dual-functionality for secure ventilation and easy cleaning. Tilt them for gentle airflow or turn them for full opening. An ideal solution for modern homes.',
-      image: 'https://picsum.photos/600/402',
+      image: 'https://picsum.photos/600/400?random=3',
       hint: 'tilt turn window'
     },
     {
       title: 'uPVC French Doors',
       description: 'Add a touch of class and open up your space with timeless elegance. Our French doors are perfect for creating a grand entrance to your garden or patio.',
-      image: 'https://picsum.photos/602/400',
+      image: 'https://picsum.photos/600/400?random=4',
       hint: 'french doors'
     },
     {
       title: 'uPVC Ventilators',
       description: 'Perfect for bathrooms and kitchens, providing essential ventilation while maintaining security. They are designed to prevent moisture buildup and keep your spaces fresh.',
-      image: 'https://picsum.photos/601/401',
+      image: 'https://picsum.photos/600/400?random=5',
       hint: 'bathroom window'
     },
     {
       title: 'uPVC Fixed Windows',
       description: 'Also known as picture windows, these are stationary and do not open. They are perfect for areas where you want to maximize natural light and enjoy an unobstructed view.',
-      image: 'https://picsum.photos/602/402',
+      image: 'https://picsum.photos/600/400?random=6',
       hint: 'picture window'
     },
   ];

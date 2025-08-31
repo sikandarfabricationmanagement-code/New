@@ -25,7 +25,7 @@ export default function AboutPage() {
                     </div>
                     <div>
                         <Image 
-                            src="https://picsum.photos/600/400"
+                            src="https://picsum.photos/600/400?random=11"
                             alt="uPVC window fabrication"
                             width={600}
                             height={400}

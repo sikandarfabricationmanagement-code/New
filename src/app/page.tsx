@@ -48,37 +48,37 @@ export default function Home() {
     {
       title: 'uPVC Casement Windows',
       description: 'Classic, elegant, and versatile windows that open outwards. Available in various styles and finishes to suit any home. They offer excellent ventilation and an unobstructed view.',
-      image: 'https://picsum.photos/600/401',
+      image: 'https://picsum.photos/600/400?random=1',
       hint: 'casement window'
     },
     {
       title: 'uPVC Sliding Doors',
       description: 'Smooth operation and space-saving design, perfect for patios and balconies. Our sliding doors glide effortlessly and provide a seamless transition between indoors and outdoors.',
-      image: 'https://picsum.photos/601/400',
+      image: 'https://picsum.photos/600/400?random=2',
       hint: 'sliding door'
     },
     {
       title: 'uPVC Tilt & Turn Windows',
       description: 'Dual-functionality for secure ventilation and easy cleaning. Tilt them for gentle airflow or turn them for full opening. An ideal solution for modern homes.',
-      image: 'https://picsum.photos/600/402',
+      image: 'https://picsum.photos/600/400?random=3',
       hint: 'tilt turn window'
     },
     {
       title: 'uPVC French Doors',
       description: 'Add a touch of class and open up your space with timeless elegance. Our French doors are perfect for creating a grand entrance to your garden or patio.',
-      image: 'https://picsum.photos/602/400',
+      image: 'https://picsum.photos/600/400?random=4',
       hint: 'french doors'
     },
     {
       title: 'uPVC Ventilators',
       description: 'Perfect for bathrooms and kitchens, providing essential ventilation while maintaining security. They are designed to prevent moisture buildup and keep your spaces fresh.',
-      image: 'https://picsum.photos/601/401',
+      image: 'https://picsum.photos/600/400?random=5',
       hint: 'bathroom window'
     },
     {
       title: 'uPVC Fixed Windows',
       description: 'Also known as picture windows, these are stationary and do not open. They are perfect for areas where you want to maximize natural light and enjoy an unobstructed view.',
-      image: 'https://picsum.photos/602/402',
+      image: 'https://picsum.photos/600/400?random=6',
       hint: 'picture window'
     },
   ];
@@ -88,21 +88,21 @@ export default function Home() {
         icon: <Award className="h-10 w-10 text-primary" />,
         title: 'ISO 9001:2015 Certified',
         description: 'This certification demonstrates our commitment to quality management systems and our ability to consistently provide products and services that meet customer and regulatory requirements.',
-        image: 'https://picsum.photos/400/200?random=1',
+        image: 'https://picsum.photos/400/200?random=11',
         hint: 'certificate document'
     },
     {
         icon: <CheckSquare className="h-10 w-10 text-primary" />,
         title: 'Green Building Council Member',
         description: 'As a member, we are dedicated to sustainable practices and promoting the development of environmentally-friendly buildings. Our uPVC products contribute to green building standards.',
-        image: 'https://picsum.photos/400/200?random=2',
+        image: 'https://picsum.photos/400/200?random=12',
         hint: 'eco award'
     },
     {
         icon: <Factory className="h-10 w-10 text-primary" />,
         title: 'National Fenestration Rating Council (NFRC)',
         description: 'Our products are rated and certified by the NFRC for energy performance, giving you reliable information about energy efficiency, including U-factor and Solar Heat Gain Coefficient.',
-        image: 'https://picsum.photos/400/200?random=3',
+        image: 'https://picsum.photos/400/200?random=13',
         hint: 'quality seal'
     }
   ];
@@ -112,21 +112,21 @@ export default function Home() {
         icon: <Building className="h-10 w-10 text-primary" />,
         title: 'State-of-the-Art Facility',
         description: 'Our expansive manufacturing unit is equipped with the latest European machinery, ensuring precision, efficiency, and high-quality output for all our uPVC products.',
-        image: 'https://picsum.photos/600/400?random=1',
+        image: 'https://picsum.photos/600/400?random=14',
         hint: 'upvc factory'
     },
     {
         icon: <GanttChartSquare className="h-10 w-10 text-primary" />,
         title: 'Automated Production Line',
         description: 'We utilize a fully automated production line, from cutting and welding to cleaning and glazing. This minimizes human error and guarantees consistent quality across all batches.',
-        image: 'https://picsum.photos/600/400?random=2',
+        image: 'https://picsum.photos/600/400?random=15',
         hint: 'window machine'
     },
     {
         icon: <PackageCheck className="h-10 w-10 text-primary" />,
         title: 'Rigorous Quality Control',
         description: 'A dedicated quality control department conducts stringent checks at every stage of the manufacturing process, ensuring that every product leaving our facility meets international standards.',
-        image: 'https://picsum.photos/600/400?random=3',
+        image: 'https://picsum.photos/600/400?random=16',
         hint: 'window inspection'
     }
   ];
@@ -139,7 +139,7 @@ export default function Home() {
         <section id="home" className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center">
             <div className="absolute inset-0 bg-black/50 z-10" />
             <Image 
-                src="https://picsum.photos/1200/800"
+                src="https://picsum.photos/1200/800?random=10"
                 alt="Modern home with large uPVC windows"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -182,7 +182,7 @@ export default function Home() {
                     </div>
                     <div>
                         <Image 
-                            src="https://picsum.photos/600/400"
+                            src="https://picsum.photos/600/400?random=11"
                             alt="uPVC Door"
                             width={600}
                             height={400}
