@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { Cpu, Lightbulb, Mail, MapPin, Phone, ShieldCheck } from 'lucide-react';
+import { Cpu, Lightbulb, Mail, MapPin, Phone, ShieldCheck, Award, Building } from 'lucide-react';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { InquiryForm } from '@/components/inquiry-form';
@@ -84,8 +84,36 @@ export default function Home() {
           </div>
         </section>
 
+        {/* About Us Section */}
+        <section id="about" className="py-20 md:py-24 bg-card">
+            <div className="container mx-auto px-4">
+                <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 className="text-3xl md:text-4xl font-bold">About Noaah Tech</h2>
+                        <p className="mt-4 text-muted-foreground">
+                            We are a technology company dedicated to creating innovative solutions for a new era. Our team of experts is passionate about pushing the boundaries of what's possible and delivering products that make a difference.
+                        </p>
+                        <p className="mt-4 text-muted-foreground">
+                            From high-performance computing to secure data clouds, we are committed to excellence in every aspect of our work.
+                        </p>
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://picsum.photos/600/400"
+                            alt="About Us"
+                            width={600}
+                            height={400}
+                            data-ai-hint="team collaboration"
+                            className="rounded-lg shadow-xl"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         {/* Feature Blocks Section */}
-        <section id="features" className="py-20 md:py-24 bg-card">
+        <section id="features" className="py-20 md:py-24">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold">Why Choose Noaah Tech?</h2>
@@ -112,7 +140,7 @@ export default function Home() {
         </section>
 
         {/* Product Showcase Section */}
-        <section id="products" className="py-20 md:py-24">
+        <section id="products" className="py-20 md:py-24 bg-card">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold">Our Flagship Products</h2>
@@ -156,9 +184,59 @@ export default function Home() {
             </Carousel>
           </div>
         </section>
+        
+        {/* Certificates Section */}
+        <section id="certificates" className="py-20 md:py-24">
+            <div className="container mx-auto px-4">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-bold">Our Certifications</h2>
+                    <p className="mt-3 max-w-2xl mx-auto text-muted-foreground">
+                        We adhere to the highest industry standards.
+                    </p>
+                </div>
+                <div className="flex justify-center">
+                    <Card className="max-w-md text-center shadow-md">
+                         <CardHeader className="items-center">
+                            <div className="bg-primary/10 p-4 rounded-full">
+                                <Award className="h-10 w-10 text-primary" />
+                            </div>
+                            <CardTitle className="mt-4">ISO 9001:2015 Certified</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-muted-foreground">Our commitment to quality management is recognized with this international standard.</p>
+                        </CardContent>
+                    </Card>
+                </div>
+            </div>
+        </section>
+        
+        {/* Infrastructure Section */}
+        <section id="infrastructure" className="py-20 md:py-24 bg-card">
+            <div className="container mx-auto px-4">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-bold">Our Infrastructure</h2>
+                    <p className="mt-3 max-w-2xl mx-auto text-muted-foreground">
+                        State-of-the-art facilities to power our innovations.
+                    </p>
+                </div>
+                 <div className="flex justify-center">
+                    <Card className="max-w-md text-center shadow-md">
+                         <CardHeader className="items-center">
+                            <div className="bg-primary/10 p-4 rounded-full">
+                                <Building className="h-10 w-10 text-primary" />
+                            </div>
+                            <CardTitle className="mt-4">World-Class Data Centers</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-muted-foreground">Secure, reliable, and scalable data centers ensuring 99.99% uptime for all our services.</p>
+                        </CardContent>
+                    </Card>
+                </div>
+            </div>
+        </section>
 
         {/* Contact and Inquiry Section */}
-        <section id="contact" className="py-20 md:py-24 bg-card">
+        <section id="contact" className="py-20 md:py-24">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div className="space-y-8">
