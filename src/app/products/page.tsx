@@ -109,18 +109,8 @@ export default function ProductsPage() {
               {seriesData.map((item, index) => (
                 <Card key={index} className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                   <CardHeader>
-                    <CardTitle className="text-center">{item.title}</CardTitle>
+                    <CardTitle className="text-center h-full flex items-center justify-center p-6">{item.title}</CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      width={800}
-                      height={600}
-                      data-ai-hint={item.hint}
-                      className="w-full object-contain"
-                    />
-                  </CardContent>
                 </Card>
               ))}
             </div>
