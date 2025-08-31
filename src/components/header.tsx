@@ -29,7 +29,7 @@ export function Header() {
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-3 font-bold text-3xl text-primary">
           <Logo className="h-16 w-16" />
-          NOAAH
+          Noaah
         </Link>
         
         <nav className="hidden lg:flex items-center gap-1">
@@ -66,7 +66,7 @@ export function Header() {
               <div className="flex items-center justify-between border-b pb-4">
                 <Link href="/" className="flex items-center gap-3 font-bold text-3xl text-primary" onClick={() => setIsMenuOpen(false)}>
                   <Logo className="h-16 w-16" />
-                  NOAAH
+                  Noaah
                 </Link>
               </div>
               <nav className="flex flex-col gap-4 py-6">

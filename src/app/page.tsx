@@ -85,7 +85,7 @@ export default function Home() {
                 Quality uPVC Profiles for Windows & Doors
                 </h1>
                 <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-primary-foreground/90">
-                NOAAH specializes in the manufacturing of high-quality uPVC profiles, offering durability, style, and energy efficiency for fabricators.
+                Noaah specializes in the manufacturing of high-quality uPVC profiles, offering durability, style, and energy efficiency for fabricators.
                 </p>
                 <div className="mt-8 flex justify-center gap-4">
                 <Button size="lg" asChild>
@@ -103,7 +103,7 @@ export default function Home() {
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 className="text-3xl md:text-4xl font-bold">About NOAAH uPVC Profiles</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold">About Noaah uPVC Profiles</h2>
                         <p className="mt-4 text-muted-foreground">
                             We are a premier uPVC profile manufacturing company, dedicated to crafting top-tier profiles for windows and doors. Our experienced team uses state-of-the-art technology and the finest materials to deliver products that are the foundation of beautiful and secure spaces.
                         </p>
@@ -111,7 +111,7 @@ export default function Home() {
                             Our commitment to quality and customer satisfaction has made us a trusted name in the industry. We believe in building lasting relationships with our clients through exceptional products and service.
                         </p>
                          <p className="mt-4 text-muted-foreground">
-                            At NOAAH, we follow a meticulous fabrication process for our profiles, ensuring every product meets our high standards. From formulation and extrusion to quality control, each step is performed with precision and care.
+                            At Noaah, we follow a meticulous fabrication process for our profiles, ensuring every product meets our high standards. From formulation and extrusion to quality control, each step is performed with precision and care.
                         </p>
                     </div>
                     <div className="overflow-hidden rounded-lg shadow-xl">
@@ -210,7 +210,7 @@ export default function Home() {
             </div>
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div className="space-y-8">
-                <h3 className="text-2xl font-bold">NOAAH Tech Private Limited.</h3>
+                <h3 className="text-2xl font-bold">Noaah Tech Private Limited.</h3>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="bg-primary/10 p-3 rounded-full">

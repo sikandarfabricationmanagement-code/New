@@ -4,7 +4,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'NOAAH uPVC',
+  title: 'Noaah uPVC',
   description: 'High-Quality uPVC Profiles for Windows and Doors',
 };
 

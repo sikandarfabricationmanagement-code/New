@@ -12,7 +12,7 @@ export default function AboutPage() {
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h1 className="text-3xl md:text-4xl font-bold">About NOAAH uPVC Profiles</h1>
+                        <h1 className="text-3xl md:text-4xl font-bold">About Noaah uPVC Profiles</h1>
                         <p className="mt-4 text-muted-foreground">
                             We are a premier uPVC profile manufacturing company, dedicated to crafting top-tier profiles for windows and doors. Our experienced team uses state-of-the-art technology and the finest materials to deliver products that are the foundation of beautiful and secure spaces.
                         </p>
@@ -20,7 +20,7 @@ export default function AboutPage() {
                             Our commitment to quality and customer satisfaction has made us a trusted name in the industry. We specialize in profiles for Sliding Windows, Casement Windows, and Combination Windows, ensuring a perfect fit for any architectural style. We believe in building lasting relationships with our clients through exceptional products and service.
                         </p>
                          <p className="mt-4 text-muted-foreground">
-                            At NOAAH, we follow a meticulous fabrication process for our profiles, ensuring every product meets our high standards. From formulation and extrusion to quality control, each step is performed with precision and care. We aim to deliver not just profiles, but complete solutions that bring comfort and style to your life.
+                            At Noaah, we follow a meticulous fabrication process for our profiles, ensuring every product meets our high standards. From formulation and extrusion to quality control, each step is performed with precision and care. We aim to deliver not just profiles, but complete solutions that bring comfort and style to your life.
                         </p>
                     </div>
                     <div className="overflow-hidden rounded-lg shadow-xl">
