@@ -9,7 +9,7 @@ export default function FeaturesPage() {
     {
       icon: <Rows className="h-10 w-10 text-primary" />,
       title: 'Wide Range',
-      description: 'Gluven uPVC offers a diverse range of products to cater to various preferences and requirements. Whether customers are seeking traditional or modern designs, different sizes, or specific functionalities, our wide range ensures they find the perfect fit for their needs.',
+      description: 'Gluven uPVC offers a diverse range of products to cater to various preferences and requirements. Whether customers are seeking traditional or modern designs, different sizes, or specific functionalities for their Sliding, Casement, or Combination windows, our wide range ensures they find the perfect fit.',
     },
     {
       icon: <Award className="h-10 w-10 text-primary" />,
@@ -34,7 +34,7 @@ export default function FeaturesPage() {
     {
         icon: <Grill className="h-10 w-10 text-primary" />,
         title: 'Grill Option',
-        description: 'Enhance the security and aesthetics of your space with our convenient grill option. Our uPVC products are designed to seamlessly accommodate grills, providing an extra layer of protection while maintaining the beauty of your windows and doors.',
+        description: 'Enhance the security and aesthetics of your space with our convenient grill option. Our uPVC products are designed to seamlessly accommodate grills, providing an extra layer of protection while maintaining the beauty of your windows.',
     },
     {
         icon: <GitBranch className="h-10 w-10 text-primary" />,
@@ -77,7 +77,7 @@ export default function FeaturesPage() {
             </div>
           </div>
         </section>
-      </main>
+      </main>      
       <Footer />
     </div>
   );

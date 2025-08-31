@@ -46,40 +46,22 @@ export default function Home() {
 
   const products = [
     {
+      title: 'uPVC Sliding Windows',
+      description: 'Sleek and modern, our sliding windows maximize natural light and airflow, gliding effortlessly to connect your indoor and outdoor spaces.',
+      image: '/images/sliding-window-1.jpg',
+      hint: 'upvc sliding window'
+    },
+    {
       title: 'uPVC Casement Windows',
-      description: 'Classic, elegant, and versatile windows that open outwards. Available in various styles and finishes to suit any home. They offer excellent ventilation and an unobstructed view.',
-      image: 'https://picsum.photos/600/400?random=1',
-      hint: 'casement window'
+      description: 'A timeless and elegant choice, hinged on the side to open outward for excellent ventilation, easy cleaning, and a classic look.',
+      image: '/images/casement-window-1.jpg',
+      hint: 'upvc casement window'
     },
     {
-      title: 'uPVC Sliding Doors',
-      description: 'Smooth operation and space-saving design, perfect for patios and balconies. Our sliding doors glide effortlessly and provide a seamless transition between indoors and outdoors.',
-      image: 'https://picsum.photos/600/400?random=2',
-      hint: 'sliding door'
-    },
-    {
-      title: 'uPVC Tilt & Turn Windows',
-      description: 'Dual-functionality for secure ventilation and easy cleaning. Tilt them for gentle airflow or turn them for full opening. An ideal solution for modern homes.',
-      image: 'https://picsum.photos/600/400?random=3',
-      hint: 'tilt turn window'
-    },
-    {
-      title: 'uPVC French Doors',
-      description: 'Add a touch of class and open up your space with timeless elegance. Our French doors are perfect for creating a grand entrance to your garden or patio.',
-      image: 'https://picsum.photos/600/400?random=4',
-      hint: 'french doors'
-    },
-    {
-      title: 'uPVC Ventilators',
-      description: 'Perfect for bathrooms and kitchens, providing essential ventilation while maintaining security. They are designed to prevent moisture buildup and keep your spaces fresh.',
-      image: 'https://picsum.photos/600/400?random=5',
-      hint: 'bathroom window'
-    },
-    {
-      title: 'uPVC Fixed Windows',
-      description: 'Also known as picture windows, these are stationary and do not open. They are perfect for areas where you want to maximize natural light and enjoy an unobstructed view.',
-      image: 'https://picsum.photos/600/400?random=6',
-      hint: 'picture window'
+      title: 'uPVC Combination Windows',
+      description: 'Combine various window styles, like casement and fixed, into a single, adaptable unit for a custom look and versatile functionality.',
+      image: '/images/combination-window-1.jpg',
+      hint: 'upvc combination window'
     },
   ];
 
@@ -88,21 +70,21 @@ export default function Home() {
         icon: <Award className="h-10 w-10 text-primary" />,
         title: 'ISO 9001:2015 Certified',
         description: 'This certification demonstrates our commitment to quality management systems and our ability to consistently provide products and services that meet customer and regulatory requirements.',
-        image: 'https://picsum.photos/400/200?random=11',
+        image: '/images/certificate-1.jpg',
         hint: 'certificate document'
     },
     {
         icon: <CheckSquare className="h-10 w-10 text-primary" />,
         title: 'Green Building Council Member',
         description: 'As a member, we are dedicated to sustainable practices and promoting the development of environmentally-friendly buildings. Our uPVC products contribute to green building standards.',
-        image: 'https://picsum.photos/400/200?random=12',
+        image: '/images/certificate-2.jpg',
         hint: 'eco award'
     },
     {
         icon: <Factory className="h-10 w-10 text-primary" />,
         title: 'National Fenestration Rating Council (NFRC)',
         description: 'Our products are rated and certified by the NFRC for energy performance, giving you reliable information about energy efficiency, including U-factor and Solar Heat Gain Coefficient.',
-        image: 'https://picsum.photos/400/200?random=13',
+        image: '/images/certificate-3.jpg',
         hint: 'quality seal'
     }
   ];
@@ -112,21 +94,21 @@ export default function Home() {
         icon: <Building className="h-10 w-10 text-primary" />,
         title: 'State-of-the-Art Facility',
         description: 'Our expansive manufacturing unit is equipped with the latest European machinery, ensuring precision, efficiency, and high-quality output for all our uPVC products.',
-        image: 'https://picsum.photos/600/400?random=14',
+        image: '/images/infrastructure-1.jpg',
         hint: 'upvc factory'
     },
     {
         icon: <GanttChartSquare className="h-10 w-10 text-primary" />,
         title: 'Automated Production Line',
         description: 'We utilize a fully automated production line, from cutting and welding to cleaning and glazing. This minimizes human error and guarantees consistent quality across all batches.',
-        image: 'https://picsum.photos/600/400?random=15',
+        image: '/images/infrastructure-2.jpg',
         hint: 'window machine'
     },
     {
         icon: <PackageCheck className="h-10 w-10 text-primary" />,
         title: 'Rigorous Quality Control',
         description: 'A dedicated quality control department conducts stringent checks at every stage of the manufacturing process, ensuring that every product leaving our facility meets international standards.',
-        image: 'https://picsum.photos/600/400?random=16',
+        image: '/images/infrastructure-3.jpg',
         hint: 'window inspection'
     }
   ];
@@ -139,7 +121,7 @@ export default function Home() {
         <section id="home" className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center">
             <div className="absolute inset-0 bg-black/50 z-10" />
             <Image 
-                src="https://picsum.photos/1200/800"
+                src="/images/hero.jpg"
                 alt="Modern home with large uPVC windows"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -182,7 +164,7 @@ export default function Home() {
                     </div>
                     <div>
                         <Image 
-                            src="https://picsum.photos/600/400"
+                            src="/images/about-us.jpg"
                             alt="uPVC Door"
                             width={600}
                             height={400}
@@ -204,7 +186,7 @@ export default function Home() {
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {products.slice(0, 3).map((product, index) => (
+                {products.map((product, index) => (
                     <Card key={index} className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                         <CardContent className="p-0">
                           <Image
@@ -283,7 +265,7 @@ export default function Home() {
                     <div>
                       <h3 className="font-semibold text-lg">Phone</h3>
                       <p className="text-muted-foreground">Speak to our uPVC experts today.</p>
-                      <a href="tel:+919900004811" className="text-primary hover:underline">+91 99000 04811</a>
+                      <a href="tel:+919900004811" className="text-primary hover:underline">+91 9900004811</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">

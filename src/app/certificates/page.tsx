@@ -11,21 +11,21 @@ export default function CertificatesPage() {
             icon: <Award className="h-10 w-10 text-primary" />,
             title: 'ISO 9001:2015 Certified',
             description: 'This certification demonstrates our commitment to quality management systems and our ability to consistently provide products and services that meet customer and regulatory requirements.',
-            image: 'https://picsum.photos/400/200?random=11',
+            image: '/images/certificate-1.jpg',
             hint: 'certificate document'
         },
         {
             icon: <CheckSquare className="h-10 w-10 text-primary" />,
             title: 'Green Building Council Member',
             description: 'As a member, we are dedicated to sustainable practices and promoting the development of environmentally-friendly buildings. Our uPVC products contribute to green building standards.',
-            image: 'https://picsum.photos/400/200?random=12',
+            image: '/images/certificate-2.jpg',
             hint: 'eco award'
         },
         {
             icon: <Factory className="h-10 w-10 text-primary" />,
             title: 'National Fenestration Rating Council (NFRC)',
             description: 'Our products are rated and certified by the NFRC for energy performance, giving you reliable information about energy efficiency, including U-factor and Solar Heat Gain Coefficient.',
-            image: 'https://picsum.photos/400/200?random=13',
+            image: '/images/certificate-3.jpg',
             hint: 'quality seal'
         }
     ]
