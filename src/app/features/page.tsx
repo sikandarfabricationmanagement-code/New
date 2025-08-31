@@ -39,7 +39,7 @@ export default function FeaturesPage() {
     {
         icon: <GitBranch className="h-10 w-10 text-primary" />,
         title: 'High Impact Resistance',
-        description: 'Life is unpredictable, but your windows and doors don\'t have to be. Gluven uPVC boasts exceptional impact resistance, ensuring that your investment remains intact and functional even in the face of accidental impacts.',
+        description: "Life is unpredictable, but your windows and doors don't have to be. Gluven uPVC boasts exceptional impact resistance, ensuring that your investment remains intact and functional even in the face of accidental impacts.",
     },
     {
         icon: <Layers className="h-10 w-10 text-primary" />,
