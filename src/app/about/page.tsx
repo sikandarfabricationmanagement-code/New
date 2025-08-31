@@ -26,10 +26,10 @@ export default function AboutPage() {
                     <div>
                         <Image 
                             src="https://picsum.photos/600/400"
-                            alt="Modern house with uPVC windows"
+                            alt="uPVC window fabrication"
                             width={600}
                             height={400}
-                            data-ai-hint="modern house"
+                            data-ai-hint="window factory"
                             className="rounded-lg shadow-xl"
                         />
                     </div>

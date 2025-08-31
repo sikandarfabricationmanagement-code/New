@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/header';
@@ -48,37 +49,37 @@ export default function Home() {
       title: 'uPVC Casement Windows',
       description: 'Classic, elegant, and versatile windows that open outwards. Available in various styles and finishes to suit any home. They offer excellent ventilation and an unobstructed view.',
       image: 'https://picsum.photos/600/401',
-      hint: 'modern window'
+      hint: 'casement window'
     },
     {
       title: 'uPVC Sliding Doors',
       description: 'Smooth operation and space-saving design, perfect for patios and balconies. Our sliding doors glide effortlessly and provide a seamless transition between indoors and outdoors.',
       image: 'https://picsum.photos/601/400',
-      hint: 'patio door'
+      hint: 'sliding door'
     },
     {
       title: 'uPVC Tilt & Turn Windows',
       description: 'Dual-functionality for secure ventilation and easy cleaning. Tilt them for gentle airflow or turn them for full opening. An ideal solution for modern homes.',
       image: 'https://picsum.photos/600/402',
-      hint: 'open window'
+      hint: 'tilt turn window'
     },
     {
       title: 'uPVC French Doors',
       description: 'Add a touch of class and open up your space with timeless elegance. Our French doors are perfect for creating a grand entrance to your garden or patio.',
       image: 'https://picsum.photos/602/400',
-      hint: 'glass doors'
+      hint: 'french doors'
     },
     {
       title: 'uPVC Ventilators',
       description: 'Perfect for bathrooms and kitchens, providing essential ventilation while maintaining security. They are designed to prevent moisture buildup and keep your spaces fresh.',
       image: 'https://picsum.photos/601/401',
-      hint: 'small window'
+      hint: 'bathroom window'
     },
     {
       title: 'uPVC Fixed Windows',
       description: 'Also known as picture windows, these are stationary and do not open. They are perfect for areas where you want to maximize natural light and enjoy an unobstructed view.',
       image: 'https://picsum.photos/602/402',
-      hint: 'large window'
+      hint: 'picture window'
     },
   ];
 
@@ -112,21 +113,21 @@ export default function Home() {
         title: 'State-of-the-Art Facility',
         description: 'Our expansive manufacturing unit is equipped with the latest European machinery, ensuring precision, efficiency, and high-quality output for all our uPVC products.',
         image: 'https://picsum.photos/600/400?random=1',
-        hint: 'factory interior'
+        hint: 'upvc factory'
     },
     {
         icon: <GanttChartSquare className="h-10 w-10 text-primary" />,
         title: 'Automated Production Line',
         description: 'We utilize a fully automated production line, from cutting and welding to cleaning and glazing. This minimizes human error and guarantees consistent quality across all batches.',
         image: 'https://picsum.photos/600/400?random=2',
-        hint: 'robotic arm'
+        hint: 'window machine'
     },
     {
         icon: <PackageCheck className="h-10 w-10 text-primary" />,
         title: 'Rigorous Quality Control',
         description: 'A dedicated quality control department conducts stringent checks at every stage of the manufacturing process, ensuring that every product leaving our facility meets international standards.',
         image: 'https://picsum.photos/600/400?random=3',
-        hint: 'quality inspection'
+        hint: 'window inspection'
     }
   ];
 
@@ -142,7 +143,7 @@ export default function Home() {
                 alt="Modern home with large uPVC windows"
                 fill
                 style={{ objectFit: 'cover' }}
-                data-ai-hint="modern home"
+                data-ai-hint="uPVC windows"
                 className="brightness-75"
             />
             <div className="relative z-20 container mx-auto px-4">
@@ -182,10 +183,10 @@ export default function Home() {
                     <div>
                         <Image 
                             src="https://picsum.photos/600/400"
-                            alt="Modern house with uPVC windows"
+                            alt="uPVC Door"
                             width={600}
                             height={400}
-                            data-ai-hint="modern house"
+                            data-ai-hint="uPVC door"
                             className="rounded-lg shadow-xl"
                         />
                     </div>

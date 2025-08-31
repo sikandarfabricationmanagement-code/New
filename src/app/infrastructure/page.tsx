@@ -13,21 +13,21 @@ export default function InfrastructurePage() {
             title: 'State-of-the-Art Facility',
             description: 'Our expansive manufacturing unit is equipped with the latest European machinery, ensuring precision, efficiency, and high-quality output for all our uPVC products.',
             image: 'https://picsum.photos/600/400?random=1',
-            hint: 'factory interior'
+            hint: 'upvc factory'
         },
         {
             icon: <GanttChartSquare className="h-10 w-10 text-primary" />,
             title: 'Automated Production Line',
             description: 'We utilize a fully automated production line, from cutting and welding to cleaning and glazing. This minimizes human error and guarantees consistent quality across all batches.',
             image: 'https://picsum.photos/600/400?random=2',
-            hint: 'robotic arm'
+            hint: 'window machine'
         },
         {
             icon: <PackageCheck className="h-10 w-10 text-primary" />,
             title: 'Rigorous Quality Control',
             description: 'A dedicated quality control department conducts stringent checks at every stage of the manufacturing process, ensuring that every product leaving our facility meets international standards.',
             image: 'https://picsum.photos/600/400?random=3',
-            hint: 'quality inspection'
+            hint: 'window inspection'
         }
     ]
 
