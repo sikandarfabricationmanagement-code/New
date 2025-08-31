@@ -19,11 +19,11 @@ export function Footer() {
     <footer className="border-t bg-card">
       <div className="container mx-auto flex flex-col items-center justify-between gap-6 px-4 py-8 sm:flex-row">
         <Link href="/" className="flex items-center gap-3 font-bold text-3xl text-primary">
-          <Logo className="h-12 w-12" />
-          Noaah
+          <Logo className="h-16 w-16" />
+          NOAAH
         </Link>
         <div className='text-center'>
-            <p className='font-semibold'>Noaah Tech Private Limited.</p>
+            <p className='font-semibold'>NOAAH Tech Private Limited.</p>
             <p className="text-sm text-muted-foreground">
             &copy; {currentYear} All rights reserved.
             </p>

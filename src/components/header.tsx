@@ -28,8 +28,8 @@ export function Header() {
     <header className="bg-background/80 backdrop-blur-sm sticky top-0 z-50 w-full border-b">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-3 font-bold text-3xl text-primary">
-          <Logo className="h-12 w-12" />
-          Noaah
+          <Logo className="h-16 w-16" />
+          NOAAH
         </Link>
         
         <nav className="hidden lg:flex items-center gap-1">
@@ -45,7 +45,7 @@ export function Header() {
 
         <div className="hidden lg:flex items-center gap-2">
             <Button asChild>
-                <Link href="/Brochure.pdf" download>
+                <Link href="/Brochure.pdf" target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 h-4 w-4" />
                 Download Brochure
 
@@ -65,8 +65,8 @@ export function Header() {
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between border-b pb-4">
                 <Link href="/" className="flex items-center gap-3 font-bold text-3xl text-primary" onClick={() => setIsMenuOpen(false)}>
-                  <Logo className="h-12 w-12" />
-                  Noaah
+                  <Logo className="h-16 w-16" />
+                  NOAAH
                 </Link>
               </div>
               <nav className="flex flex-col gap-4 py-6">
@@ -83,7 +83,7 @@ export function Header() {
               </nav>
               <div className="mt-auto">
                 <Button className="w-full" asChild>
-                    <Link href="/Brochure.pdf" download>
+                    <Link href="/Brochure.pdf" target="_blank" rel="noopener noreferrer">
                         <Download className="mr-2 h-4 w-4" />
                         Download Brochure
                     </Link>

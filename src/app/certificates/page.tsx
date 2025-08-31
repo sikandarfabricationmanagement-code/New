@@ -53,14 +53,14 @@ export default function CertificatesPage() {
                         </CardHeader>
                         <CardContent className="flex-grow flex flex-col justify-between">
                             <p className="text-muted-foreground">{cert.description}</p>
-                            <div className="mt-6">
+                            <div className="mt-6 overflow-hidden rounded-lg">
                                 <Image
                                     src={cert.image}
                                     alt={`${cert.title} certificate`}
                                     width={400}
                                     height={200}
                                     data-ai-hint={cert.hint}
-                                    className="rounded-lg shadow-md mx-auto"
+                                    className="rounded-lg shadow-md mx-auto w-full h-auto object-cover transition-transform duration-300 ease-in-out hover:scale-105"
                                 />
                             </div>
                         </CardContent>

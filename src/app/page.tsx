@@ -85,7 +85,7 @@ export default function Home() {
                 Quality uPVC Profiles for Windows & Doors
                 </h1>
                 <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-primary-foreground/90">
-                Noaah specializes in the manufacturing of high-quality uPVC profiles, offering durability, style, and energy efficiency for fabricators.
+                NOAAH specializes in the manufacturing of high-quality uPVC profiles, offering durability, style, and energy efficiency for fabricators.
                 </p>
                 <div className="mt-8 flex justify-center gap-4">
                 <Button size="lg" asChild>
@@ -103,7 +103,7 @@ export default function Home() {
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 className="text-3xl md:text-4xl font-bold">About Noaah uPVC Profiles</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold">About NOAAH uPVC Profiles</h2>
                         <p className="mt-4 text-muted-foreground">
                             We are a premier uPVC profile manufacturing company, dedicated to crafting top-tier profiles for windows and doors. Our experienced team uses state-of-the-art technology and the finest materials to deliver products that are the foundation of beautiful and secure spaces.
                         </p>
@@ -111,17 +111,17 @@ export default function Home() {
                             Our commitment to quality and customer satisfaction has made us a trusted name in the industry. We believe in building lasting relationships with our clients through exceptional products and service.
                         </p>
                          <p className="mt-4 text-muted-foreground">
-                            At Noaah, we follow a meticulous fabrication process for our profiles, ensuring every product meets our high standards. From formulation and extrusion to quality control, each step is performed with precision and care.
+                            At NOAAH, we follow a meticulous fabrication process for our profiles, ensuring every product meets our high standards. From formulation and extrusion to quality control, each step is performed with precision and care.
                         </p>
                     </div>
-                    <div>
+                    <div className="overflow-hidden rounded-lg shadow-xl">
                         <Image 
                             src="/images/about-us-detailed.png"
                             alt="uPVC Door Profiles"
                             width={600}
                             height={400}
                             data-ai-hint="upvc door white"
-                            className="rounded-lg shadow-xl"
+                            className="w-full h-auto object-cover transition-transform duration-300 ease-in-out hover:scale-105"
                         />
                     </div>
                 </div>
@@ -139,16 +139,18 @@ export default function Home() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {products.map((product, index) => (
-                    <Card key={index} className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <Card key={index} className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
                         <CardContent className="p-0">
-                          <Image
-                            src={product.image}
-                            alt={product.title}
-                            width={600}
-                            height={400}
-                            data-ai-hint={product.hint}
-                            className="w-full h-56 object-cover"
-                          />
+                          <div className="overflow-hidden">
+                            <Image
+                              src={product.image}
+                              alt={product.title}
+                              width={600}
+                              height={400}
+                              data-ai-hint={product.hint}
+                              className="w-full h-56 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                            />
+                          </div>
                           <div className="p-6">
                             <h3 className="text-xl font-semibold">{product.title}</h3>
                             <p className="mt-2 text-muted-foreground">{product.description}</p>
@@ -208,7 +210,7 @@ export default function Home() {
             </div>
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div className="space-y-8">
-                <h3 className="text-2xl font-bold">Noaah Tech Private Limited.</h3>
+                <h3 className="text-2xl font-bold">NOAAH Tech Private Limited.</h3>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="bg-primary/10 p-3 rounded-full">

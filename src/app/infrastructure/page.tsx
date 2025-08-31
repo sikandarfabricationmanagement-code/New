@@ -55,14 +55,14 @@ export default function InfrastructurePage() {
                                 </div>
                                 <p className="text-muted-foreground">{point.description}</p>
                             </div>
-                            <div>
+                            <div className="overflow-hidden rounded-lg shadow-xl">
                                 <Image
                                     src={point.image}
                                     alt={point.title}
                                     width={600}
                                     height={400}
                                     data-ai-hint={point.hint}
-                                    className="rounded-lg shadow-xl"
+                                    className="w-full h-auto object-cover transition-transform duration-300 ease-in-out hover:scale-105"
                                 />
                             </div>
                         </div>

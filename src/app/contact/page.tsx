@@ -19,7 +19,7 @@ export default function ContactPage() {
             </div>
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div className="space-y-8">
-                <h2 className="text-2xl font-bold">Noaah Tech Private Limited.</h2>
+                <h2 className="text-2xl font-bold">NOAAH Tech Private Limited.</h2>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="bg-primary/10 p-3 rounded-full">
@@ -28,7 +28,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-lg">Phone</h3>
                       <p className="text-muted-foreground">Speak to our uPVC experts today.</p>
-                      <a href="tel:+919900004811" className="text-primary hover:underline">+91 99000 04811</a>
+                      <a href="tel:+919900004811" className="text-primary hover:underline">+91 9900004811</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
