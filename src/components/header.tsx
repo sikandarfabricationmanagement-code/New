@@ -28,7 +28,7 @@ export function Header() {
     <header className="bg-background/80 backdrop-blur-sm sticky top-0 z-50 w-full border-b">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-3 font-bold text-3xl text-primary">
-          <Logo className="h-10 w-10" />
+          <Logo className="h-12 w-12" />
           Noaah
         </Link>
         
@@ -65,7 +65,7 @@ export function Header() {
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between border-b pb-4">
                 <Link href="/" className="flex items-center gap-3 font-bold text-3xl text-primary" onClick={() => setIsMenuOpen(false)}>
-                  <Logo className="h-10 w-10" />
+                  <Logo className="h-12 w-12" />
                   Noaah
                 </Link>
               </div>
