@@ -12,13 +12,13 @@ import {
 import { Logo } from './logo';
 
 const navLinks = [
-  { href: "/#home", label: "Home" },
-  { href: "/#about", label: "About Us" },
-  { href: "/#products", label: "Products" },
-  { href: "/#features", label: "Features" },
-  { href: "/#certificates", label: "Certificate" },
-  { href: "/#infrastructure", label: "Infrastructure" },
-  { href: "/#contact", label: "Contact Us" },
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About Us" },
+  { href: "/products", label: "Products" },
+  { href: "/features", label: "Features" },
+  { href: "/certificates", label: "Certificate" },
+  { href: "/infrastructure", label: "Infrastructure" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 export function Header() {

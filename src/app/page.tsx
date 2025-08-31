@@ -154,10 +154,10 @@ export default function Home() {
                 </p>
                 <div className="mt-8 flex justify-center gap-4">
                 <Button size="lg" asChild>
-                    <Link href="#contact">Contact Us</Link>
+                    <Link href="/contact">Contact Us</Link>
                 </Button>
                 <Button size="lg" variant="secondary" asChild>
-                    <Link href="#products">View Products</Link>
+                    <Link href="/products">View Products</Link>
                 </Button>
                 </div>
             </div>
@@ -203,7 +203,7 @@ export default function Home() {
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {products.map((product, index) => (
+                {products.slice(0, 3).map((product, index) => (
                     <Card key={index} className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                         <CardContent className="p-0">
                           <Image
@@ -222,6 +222,11 @@ export default function Home() {
                     </Card>
                 ))}
             </div>
+            <div className="text-center mt-12">
+              <Button asChild>
+                <Link href="/products">View All Products</Link>
+              </Button>
+            </div>
           </div>
         </section>
 
@@ -235,7 +240,7 @@ export default function Home() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {features.map((feature, index) => (
+              {features.slice(0,3).map((feature, index) => (
                 <Card key={index} className="text-center shadow-md hover:shadow-xl transition-shadow duration-300">
                   <CardHeader className="items-center">
                     <div className="bg-primary/10 p-4 rounded-full">
@@ -249,83 +254,14 @@ export default function Home() {
                 </Card>
               ))}
             </div>
+             <div className="text-center mt-12">
+              <Button asChild>
+                <Link href="/features">Explore All Features</Link>
+              </Button>
+            </div>
           </div>
         </section>
-
-        {/* Certificates Section */}
-        <section id="certificates" className="py-20 md:py-24">
-            <div className="container mx-auto px-4">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold">Quality Assurance & Certifications</h2>
-                    <p className="mt-3 max-w-2xl mx-auto text-muted-foreground">
-                        We adhere to the highest industry standards for quality and safety. Our certifications are a testament to our dedication to excellence.
-                    </p>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  {certificates.map((cert, index) => (
-                    <Card key={index} className="text-center shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
-                         <CardHeader className="items-center">
-                            <div className="bg-primary/10 p-4 rounded-full">
-                                {cert.icon}
-                            </div>
-                            <CardTitle className="mt-4">{cert.title}</CardTitle>
-                        </CardHeader>
-                        <CardContent className="flex-grow flex flex-col justify-between">
-                            <p className="text-muted-foreground">{cert.description}</p>
-                            <div className="mt-6">
-                                <Image
-                                    src={cert.image}
-                                    alt={`${cert.title} certificate`}
-                                    width={400}
-                                    height={200}
-                                    data-ai-hint={cert.hint}
-                                    className="rounded-lg shadow-md mx-auto"
-                                />
-                            </div>
-                        </CardContent>
-                    </Card>
-                  ))}
-                </div>
-            </div>
-        </section>
-
-        {/* Infrastructure Section */}
-        <section id="infrastructure" className="py-20 md:py-24 bg-card">
-            <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold">Our Fabrication Unit</h2>
-                    <p className="mt-3 max-w-2xl mx-auto text-muted-foreground">
-                        Equipped with modern machinery and skilled personnel for precision engineering and superior craftsmanship.
-                    </p>
-                </div>
-                <div className="grid md:grid-cols-1 gap-12">
-                    {infrastructurePoints.map((point, index) => (
-                        <div key={index} className={`grid md:grid-cols-2 gap-12 items-center ${index % 2 !== 0 ? 'md:grid-flow-row-dense md:[&>*:last-child]:col-start-1' : ''}`}>
-                            <div>
-                                <div className="flex items-center gap-4 mb-4">
-                                    <div className="bg-primary/10 p-3 rounded-full">
-                                        {point.icon}
-                                    </div>
-                                    <h3 className="text-2xl font-bold">{point.title}</h3>
-                                </div>
-                                <p className="text-muted-foreground">{point.description}</p>
-                            </div>
-                            <div>
-                                <Image
-                                    src={point.image}
-                                    alt={point.title}
-                                    width={600}
-                                    height={400}
-                                    data-ai-hint={point.hint}
-                                    className="rounded-lg shadow-xl"
-                                />
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
-
+        
         {/* Contact Section */}
         <section id="contact" className="py-20 md:py-24">
           <div className="container mx-auto px-4">
