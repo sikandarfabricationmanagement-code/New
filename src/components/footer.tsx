@@ -19,7 +19,7 @@ export function Footer() {
     <footer className="border-t bg-card">
       <div className="container mx-auto flex flex-col items-center justify-between gap-6 px-4 py-8 sm:flex-row">
         <Link href="/" className="flex items-center gap-3 font-bold text-3xl text-primary">
-          <Logo className="h-16 w-16" />
+          <Logo className="h-20 w-20" />
           NOAAH
         </Link>
         <div className='text-center'>
