@@ -1,3 +1,4 @@
+
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
@@ -23,7 +24,7 @@ export default function RootLayout({
       <body className="font-body antialiased">
         {children}
         <Toaster />
-        <WhatsAppButton phoneNumber="9900004811" />
+        <WhatsAppButton phoneNumber="+919900004811" />
       </body>
     </html>
   );
