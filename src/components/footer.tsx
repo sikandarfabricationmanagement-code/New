@@ -1,10 +1,11 @@
+
 "use client";
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 const LogoPlaceholder = () => (
-  <div className="w-6 h-6 bg-primary rounded-full" />
+  <div className="w-8 h-8 bg-primary rounded-full" />
 );
 
 export function Footer() {
@@ -21,7 +22,7 @@ export function Footer() {
   return (
     <footer className="border-t bg-card">
       <div className="container mx-auto flex flex-col items-center justify-between gap-6 px-4 py-8 sm:flex-row">
-        <Link href="/" className="flex items-center gap-2 font-bold text-lg text-primary">
+        <Link href="/" className="flex items-center gap-3 font-bold text-2xl text-primary">
           <LogoPlaceholder />
           Noaah
         </Link>

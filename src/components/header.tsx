@@ -22,7 +22,7 @@ const navLinks = [
 ];
 
 const LogoPlaceholder = () => (
-  <div className="w-6 h-6 bg-primary rounded-full" />
+  <div className="w-8 h-8 bg-primary rounded-full" />
 );
 
 
@@ -31,8 +31,8 @@ export function Header() {
 
   return (
     <header className="bg-background/80 backdrop-blur-sm sticky top-0 z-50 w-full border-b">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-2 font-bold text-lg text-primary">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4">
+        <Link href="/" className="flex items-center gap-3 font-bold text-2xl text-primary">
           <LogoPlaceholder />
           Noaah
         </Link>
@@ -67,7 +67,7 @@ export function Header() {
           <SheetContent side="left">
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between border-b pb-4">
-                <Link href="/" className="flex items-center gap-2 font-bold text-lg text-primary" onClick={() => setIsMenuOpen(false)}>
+                <Link href="/" className="flex items-center gap-3 font-bold text-2xl text-primary" onClick={() => setIsMenuOpen(false)}>
                   <LogoPlaceholder />
                   Noaah
                 </Link>
