@@ -68,10 +68,10 @@ export default function Home() {
         <section className="py-20 md:py-32">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-primary">
-              Engineering the Future of Technology
+              Engineering the Future
             </h1>
             <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground">
-              Noaah Tech provides innovative and reliable solutions to navigate the complexities of the digital world.
+              Noaah provides innovative and reliable solutions to navigate the complexities of the digital world.
             </p>
             <div className="mt-8 flex justify-center gap-4">
               <Button size="lg" asChild>
@@ -89,7 +89,7 @@ export default function Home() {
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 className="text-3xl md:text-4xl font-bold">About Noaah Tech</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold">About Noaah</h2>
                         <p className="mt-4 text-muted-foreground">
                             We are a technology company dedicated to creating innovative solutions for a new era. Our team of experts is passionate about pushing the boundaries of what's possible and delivering products that make a difference.
                         </p>
@@ -116,7 +116,7 @@ export default function Home() {
         <section id="features" className="py-20 md:py-24">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold">Why Choose Noaah Tech?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">Why Choose Noaah?</h2>
               <p className="mt-3 max-w-2xl mx-auto text-muted-foreground">
                 We are committed to excellence, innovation, and customer success.
               </p>
@@ -264,7 +264,7 @@ export default function Home() {
                     <div>
                       <h3 className="font-semibold text-lg">Email</h3>
                       <p className="text-muted-foreground">We aim to respond to all emails within one business day.</p>
-                      <a href="mailto:contact@noaahtech.com" className="text-primary hover:underline">contact@noaahtech.com</a>
+                      <a href="mailto:contact@noaah.com" className="text-primary hover:underline">contact@noaah.com</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">

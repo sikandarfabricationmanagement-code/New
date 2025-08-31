@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Ship, Download, Menu, X } from 'lucide-react';
+import { Download, Menu } from 'lucide-react';
 import { useState } from 'react';
 import {
   Sheet,
@@ -21,6 +21,11 @@ const navLinks = [
   { href: "#contact", label: "Contact Us" },
 ];
 
+const LogoPlaceholder = () => (
+  <div className="w-6 h-6 bg-primary rounded-full" />
+);
+
+
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -28,8 +33,8 @@ export function Header() {
     <header className="bg-background/80 backdrop-blur-sm sticky top-0 z-50 w-full border-b">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 font-bold text-lg text-primary">
-          <Ship className="h-6 w-6" />
-          Noaah Tech
+          <LogoPlaceholder />
+          Noaah
         </Link>
         
         <nav className="hidden md:flex items-center gap-1">
@@ -63,8 +68,8 @@ export function Header() {
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between border-b pb-4">
                 <Link href="/" className="flex items-center gap-2 font-bold text-lg text-primary" onClick={() => setIsMenuOpen(false)}>
-                  <Ship className="h-6 w-6" />
-                  Noaah Tech
+                  <LogoPlaceholder />
+                  Noaah
                 </Link>
               </div>
               <nav className="flex flex-col gap-4 py-6">

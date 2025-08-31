@@ -1,8 +1,11 @@
 "use client";
 
 import Link from 'next/link';
-import { Ship } from 'lucide-react';
 import { useState, useEffect } from 'react';
+
+const LogoPlaceholder = () => (
+  <div className="w-6 h-6 bg-primary rounded-full" />
+);
 
 export function Footer() {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
@@ -19,11 +22,11 @@ export function Footer() {
     <footer className="border-t bg-card">
       <div className="container mx-auto flex flex-col items-center justify-between gap-6 px-4 py-8 sm:flex-row">
         <Link href="/" className="flex items-center gap-2 font-bold text-lg text-primary">
-          <Ship className="h-6 w-6" />
-          Noaah Tech
+          <LogoPlaceholder />
+          Noaah
         </Link>
         <p className="text-sm text-muted-foreground text-center">
-          &copy; {currentYear} Noaah Tech. All rights reserved.
+          &copy; {currentYear} Noaah. All rights reserved.
         </p>
         <nav className="flex gap-4">
           <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
