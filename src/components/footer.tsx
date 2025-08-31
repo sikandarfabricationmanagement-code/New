@@ -23,15 +23,15 @@ export function Footer() {
           <Logo className="h-10 w-10" />
           Noaah
         </Link>
-        <p className="text-sm text-muted-foreground text-center">
-          &copy; {currentYear} Noaah. All rights reserved.
-        </p>
+        <div className='text-center'>
+            <p className='font-semibold'>Noaah Tech Private Limited.</p>
+            <p className="text-sm text-muted-foreground">
+            &copy; {currentYear} All rights reserved.
+            </p>
+        </div>
         <nav className="flex gap-4">
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-            Privacy Policy
-          </Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-            Terms of Service
+          <Link href="http://www.noaahtechprofile.com" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+            www.noaahtechprofile.com
           </Link>
         </nav>
       </div>

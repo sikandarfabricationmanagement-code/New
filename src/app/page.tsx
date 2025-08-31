@@ -5,7 +5,7 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Award, CheckSquare, Factory, ShieldCheck, ThermometerSun, Wind, Waves, VolumeX, Leaf, Building, GanttChartSquare, PackageCheck, Mail, MapPin, Phone } from 'lucide-react';
+import { Award, CheckSquare, Factory, ShieldCheck, ThermometerSun, Wind, Waves, VolumeX, Leaf, Building, GanttChartSquare, PackageCheck, Mail, MapPin, Phone, Globe } from 'lucide-react';
 import { InquiryForm } from '@/components/inquiry-form';
 
 
@@ -139,11 +139,11 @@ export default function Home() {
         <section id="home" className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center">
             <div className="absolute inset-0 bg-black/50 z-10" />
             <Image 
-                src="https://picsum.photos/1200/800?random=10"
+                src="https://picsum.photos/1200/800"
                 alt="Modern home with large uPVC windows"
                 fill
                 style={{ objectFit: 'cover' }}
-                data-ai-hint="uPVC windows"
+                data-ai-hint="modern house windows"
                 className="brightness-75"
             />
             <div className="relative z-20 container mx-auto px-4">
@@ -182,11 +182,11 @@ export default function Home() {
                     </div>
                     <div>
                         <Image 
-                            src="https://picsum.photos/600/400?random=11"
+                            src="https://picsum.photos/600/400"
                             alt="uPVC Door"
                             width={600}
                             height={400}
-                            data-ai-hint="uPVC door"
+                            data-ai-hint="upvc door white"
                             className="rounded-lg shadow-xl"
                         />
                     </div>
@@ -274,6 +274,7 @@ export default function Home() {
             </div>
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div className="space-y-8">
+                <h3 className="text-2xl font-bold">Noaah Tech Private Limited.</h3>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="bg-primary/10 p-3 rounded-full">
@@ -282,7 +283,7 @@ export default function Home() {
                     <div>
                       <h3 className="font-semibold text-lg">Phone</h3>
                       <p className="text-muted-foreground">Speak to our uPVC experts today.</p>
-                      <a href="tel:+1(555)123-4567" className="text-primary hover:underline">+1 (555) 123-4567</a>
+                      <a href="tel:+919900004811" className="text-primary hover:underline">+91 99000 04811</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -292,7 +293,7 @@ export default function Home() {
                     <div>
                       <h3 className="font-semibold text-lg">Email</h3>
                       <p className="text-muted-foreground">Send us your requirements and we'll get back to you.</p>
-                      <a href="mailto:sales@noaahupvc.com" className="text-primary hover:underline">sales@noaahupvc.com</a>
+                      <a href="mailto:noaahtechprofile@gmail.com" className="text-primary hover:underline">noaahtechprofile@gmail.com</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -301,8 +302,16 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg">Office & Showroom</h3>
-                      <p className="text-muted-foreground">Visit us to see our products.</p>
-                      <p className="text-primary">123 Fabrication Way, Industrial Park, 12345</p>
+                      <p className="text-muted-foreground">Ground Floor,No 1/5, Near Rotary Electronics,Kodigehalli,Bangalore - 560091.</p>
+                    </div>
+                  </div>
+                   <div className="flex items-start gap-4">
+                    <div className="bg-primary/10 p-3 rounded-full">
+                      <Globe className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg">Website</h3>
+                      <a href="http://www.noaahtechprofile.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.noaahtechprofile.com</a>
                     </div>
                   </div>
                 </div>
