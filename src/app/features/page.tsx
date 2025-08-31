@@ -2,7 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
-import { ShieldCheck, Rows, Zap, Award, CheckCircle, Grill, GitBranch, Layers } from 'lucide-react';
+import { ShieldCheck, Rows, Zap, Award, CheckCircle, Grid, GitBranch, Layers } from 'lucide-react';
 
 export default function FeaturesPage() {
   const features = [
@@ -32,7 +32,7 @@ export default function FeaturesPage() {
         description: 'Your health and safety matter. Our uPVC profiles are crafted without any lead content, ensuring well-being is a top priority.',
     },
     {
-        icon: <Grill className="h-10 w-10 text-primary" />,
+        icon: <Grid className="h-10 w-10 text-primary" />,
         title: 'Grill Option Compatibility',
         description: 'Our profiles are designed to seamlessly accommodate grills, providing an extra layer of protection while maintaining the beauty of the windows and doors.',
     },

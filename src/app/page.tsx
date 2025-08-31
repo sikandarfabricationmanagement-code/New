@@ -48,19 +48,19 @@ export default function Home() {
     {
       title: 'uPVC Sliding Window Profiles',
       description: 'Sleek and modern profiles for sliding windows that maximize natural light and airflow, gliding effortlessly to connect indoor and outdoor spaces.',
-      image: '/images/sliding-window-1.jpg',
+      image: '/images/sliding-window-1.avif',
       hint: 'upvc sliding window'
     },
     {
       title: 'uPVC Casement Window Profiles',
       description: 'A timeless and elegant choice, our casement profiles are designed for windows hinged on the side to open outward for excellent ventilation and a classic look.',
-      image: '/images/casement-window-1.jpg',
+      image: '/images/casement-windows.jpg',
       hint: 'upvc casement window'
     },
     {
       title: 'uPVC Combination Window Profiles',
       description: 'Combine various window styles, like casement and fixed, into a single, adaptable unit with our versatile combination profiles.',
-      image: '/images/combination-window-1.jpg',
+      image: '/images/combination-window-2.jpeg',
       hint: 'upvc combination window'
     },
   ];
