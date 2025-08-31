@@ -12,21 +12,21 @@ export default function AboutPage() {
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h1 className="text-3xl md:text-4xl font-bold">About Noaah uPVC</h1>
+                        <h1 className="text-3xl md:text-4xl font-bold">About Noaah uPVC Profiles</h1>
                         <p className="mt-4 text-muted-foreground">
-                            We are a premier uPVC fabrication company, dedicated to crafting top-tier windows and doors. Our experienced team uses state-of-the-art technology and the finest materials to deliver products that enhance the beauty and security of your spaces.
+                            We are a premier uPVC profile manufacturing company, dedicated to crafting top-tier profiles for windows and doors. Our experienced team uses state-of-the-art technology and the finest materials to deliver products that are the foundation of beautiful and secure spaces.
                         </p>
                         <p className="mt-4 text-muted-foreground">
-                            Our commitment to quality and customer satisfaction has made us a trusted name in the industry. We specialize in Sliding Windows, Casement Windows, and Combination Windows, ensuring a perfect fit for any architectural style. We believe in building lasting relationships with our clients through exceptional products and service.
+                            Our commitment to quality and customer satisfaction has made us a trusted name in the industry. We specialize in profiles for Sliding Windows, Casement Windows, and Combination Windows, ensuring a perfect fit for any architectural style. We believe in building lasting relationships with our clients through exceptional products and service.
                         </p>
                          <p className="mt-4 text-muted-foreground">
-                            At Noaah, we follow a meticulous fabrication process, ensuring every product meets our high standards. From profile cutting and welding to hardware installation and glazing, each step is performed with precision and care. We aim to deliver not just products, but complete solutions that bring comfort and style to your life.
+                            At Noaah, we follow a meticulous fabrication process for our profiles, ensuring every product meets our high standards. From formulation and extrusion to quality control, each step is performed with precision and care. We aim to deliver not just profiles, but complete solutions that bring comfort and style to your life.
                         </p>
                     </div>
                     <div>
                         <Image 
-                            src="/images/about-us-detailed.jpg"
-                            alt="uPVC window fabrication"
+                            src="/images/about-us-detailed.png"
+                            alt="uPVC window profiles"
                             width={600}
                             height={400}
                             data-ai-hint="window factory"

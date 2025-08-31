@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
   title: 'Noaah uPVC',
-  description: 'High-Quality uPVC Windows and Doors Fabrication',
+  description: 'High-Quality uPVC Profiles for Windows and Doors',
 };
 
 export default function RootLayout({

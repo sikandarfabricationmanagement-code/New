@@ -20,12 +20,12 @@ export default function Home() {
     {
       icon: <ThermometerSun className="h-10 w-10 text-primary" />,
       title: 'Energy Efficient',
-      description: 'Excellent thermal insulation properties help maintain a consistent indoor temperature, reducing your reliance on heating and cooling systems and lowering energy costs.',
+      description: 'Our profiles have excellent thermal insulation properties that help maintain a consistent indoor temperature, reducing reliance on heating and cooling systems and lowering energy costs.',
     },
     {
       icon: <ShieldCheck className="h-10 w-10 text-primary" />,
       title: 'Enhanced Security',
-      description: 'Fitted with multi-point locking systems and reinforced frames, our products provide superior security for your peace of mind, protecting your home and family.',
+      description: 'Our profiles are designed for multi-point locking systems and reinforced frames, providing superior security for your peace of mind.',
     },
     {
       icon: <VolumeX className="h-10 w-10 text-primary" />,
@@ -35,82 +35,34 @@ export default function Home() {
     {
         icon: <Waves className="h-10 w-10 text-primary" />,
         title: 'Water Resistance',
-        description: 'Engineered with advanced drainage systems, our uPVC windows and doors offer excellent protection against water leakage, keeping your home dry even during heavy downpours.',
+        description: 'Engineered for advanced drainage systems, our uPVC profiles offer excellent protection against water leakage.',
     },
     {
         icon: <Leaf className="h-10 w-10 text-primary" />,
         title: 'Eco-Friendly Material',
-        description: 'uPVC is a recyclable material that requires less energy to produce than other options. Choosing our products is a step towards a more sustainable and environmentally friendly home.',
+        description: 'uPVC is a recyclable material that requires less energy to produce than other options. Choosing our profiles is a step towards a more sustainable and environmentally friendly home.',
     }
   ];
 
   const products = [
     {
-      title: 'uPVC Sliding Windows',
-      description: 'Sleek and modern, our sliding windows maximize natural light and airflow, gliding effortlessly to connect your indoor and outdoor spaces.',
+      title: 'uPVC Sliding Window Profiles',
+      description: 'Sleek and modern profiles for sliding windows that maximize natural light and airflow, gliding effortlessly to connect indoor and outdoor spaces.',
       image: '/images/sliding-window-1.jpg',
       hint: 'upvc sliding window'
     },
     {
-      title: 'uPVC Casement Windows',
-      description: 'A timeless and elegant choice, hinged on the side to open outward for excellent ventilation, easy cleaning, and a classic look.',
+      title: 'uPVC Casement Window Profiles',
+      description: 'A timeless and elegant choice, our casement profiles are designed for windows hinged on the side to open outward for excellent ventilation and a classic look.',
       image: '/images/casement-window-1.jpg',
       hint: 'upvc casement window'
     },
     {
-      title: 'uPVC Combination Windows',
-      description: 'Combine various window styles, like casement and fixed, into a single, adaptable unit for a custom look and versatile functionality.',
+      title: 'uPVC Combination Window Profiles',
+      description: 'Combine various window styles, like casement and fixed, into a single, adaptable unit with our versatile combination profiles.',
       image: '/images/combination-window-1.jpg',
       hint: 'upvc combination window'
     },
-  ];
-
-  const certificates = [
-    {
-        icon: <Award className="h-10 w-10 text-primary" />,
-        title: 'ISO 9001:2015 Certified',
-        description: 'This certification demonstrates our commitment to quality management systems and our ability to consistently provide products and services that meet customer and regulatory requirements.',
-        image: '/images/certificate-1.jpg',
-        hint: 'certificate document'
-    },
-    {
-        icon: <CheckSquare className="h-10 w-10 text-primary" />,
-        title: 'Green Building Council Member',
-        description: 'As a member, we are dedicated to sustainable practices and promoting the development of environmentally-friendly buildings. Our uPVC products contribute to green building standards.',
-        image: '/images/certificate-2.jpg',
-        hint: 'eco award'
-    },
-    {
-        icon: <Factory className="h-10 w-10 text-primary" />,
-        title: 'National Fenestration Rating Council (NFRC)',
-        description: 'Our products are rated and certified by the NFRC for energy performance, giving you reliable information about energy efficiency, including U-factor and Solar Heat Gain Coefficient.',
-        image: '/images/certificate-3.jpg',
-        hint: 'quality seal'
-    }
-  ];
-
-  const infrastructurePoints = [
-    {
-        icon: <Building className="h-10 w-10 text-primary" />,
-        title: 'State-of-the-Art Facility',
-        description: 'Our expansive manufacturing unit is equipped with the latest European machinery, ensuring precision, efficiency, and high-quality output for all our uPVC products.',
-        image: '/images/infrastructure-1.jpg',
-        hint: 'upvc factory'
-    },
-    {
-        icon: <GanttChartSquare className="h-10 w-10 text-primary" />,
-        title: 'Automated Production Line',
-        description: 'We utilize a fully automated production line, from cutting and welding to cleaning and glazing. This minimizes human error and guarantees consistent quality across all batches.',
-        image: '/images/infrastructure-2.jpg',
-        hint: 'window machine'
-    },
-    {
-        icon: <PackageCheck className="h-10 w-10 text-primary" />,
-        title: 'Rigorous Quality Control',
-        description: 'A dedicated quality control department conducts stringent checks at every stage of the manufacturing process, ensuring that every product leaving our facility meets international standards.',
-        image: '/images/infrastructure-3.jpg',
-        hint: 'window inspection'
-    }
   ];
 
   return (
@@ -121,7 +73,7 @@ export default function Home() {
         <section id="home" className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center">
             <div className="absolute inset-0 bg-black/50 z-10" />
             <Image 
-                src="/images/hero.jpg"
+                src="/images/hero.webp"
                 alt="Modern home with large uPVC windows"
                 fill
                 style={{ objectFit: 'cover' }}
@@ -130,17 +82,17 @@ export default function Home() {
             />
             <div className="relative z-20 container mx-auto px-4">
                 <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white">
-                Quality uPVC Windows & Doors
+                Quality uPVC Profiles for Windows & Doors
                 </h1>
                 <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-primary-foreground/90">
-                Noaah specializes in the fabrication of high-quality uPVC products, offering durability, style, and energy efficiency.
+                Noaah specializes in the manufacturing of high-quality uPVC profiles, offering durability, style, and energy efficiency for fabricators.
                 </p>
                 <div className="mt-8 flex justify-center gap-4">
                 <Button size="lg" asChild>
                     <Link href="/contact">Contact Us</Link>
                 </Button>
                 <Button size="lg" variant="secondary" asChild>
-                    <Link href="/products">View Products</Link>
+                    <Link href="/products">View Profiles</Link>
                 </Button>
                 </div>
             </div>
@@ -151,21 +103,21 @@ export default function Home() {
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 className="text-3xl md:text-4xl font-bold">About Noaah uPVC</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold">About Noaah uPVC Profiles</h2>
                         <p className="mt-4 text-muted-foreground">
-                            We are a premier uPVC fabrication company, dedicated to crafting top-tier windows and doors. Our experienced team uses state-of-the-art technology and the finest materials to deliver products that enhance the beauty and security of your spaces.
+                            We are a premier uPVC profile manufacturing company, dedicated to crafting top-tier profiles for windows and doors. Our experienced team uses state-of-the-art technology and the finest materials to deliver products that are the foundation of beautiful and secure spaces.
                         </p>
                         <p className="mt-4 text-muted-foreground">
                             Our commitment to quality and customer satisfaction has made us a trusted name in the industry. We believe in building lasting relationships with our clients through exceptional products and service.
                         </p>
                          <p className="mt-4 text-muted-foreground">
-                            At Noaah, we follow a meticulous fabrication process, ensuring every product meets our high standards. From profile cutting and welding to hardware installation and glazing, each step is performed with precision and care. We aim to deliver not just products, but complete solutions that bring comfort and style to your life.
+                            At Noaah, we follow a meticulous fabrication process for our profiles, ensuring every product meets our high standards. From formulation and extrusion to quality control, each step is performed with precision and care.
                         </p>
                     </div>
                     <div>
                         <Image 
-                            src="/images/about-us.jpg"
-                            alt="uPVC Door"
+                            src="/images/about-us-detailed.png"
+                            alt="uPVC Door Profiles"
                             width={600}
                             height={400}
                             data-ai-hint="upvc door white"
@@ -180,9 +132,9 @@ export default function Home() {
         <section id="products" className="py-20 md:py-24">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold">Our Product Range</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">Our Profile Range</h2>
               <p className="mt-3 max-w-2xl mx-auto text-muted-foreground">
-                Explore our comprehensive collection of uPVC windows and doors, designed to meet your every need.
+                Explore our comprehensive collection of uPVC profiles for windows and doors, designed to meet your every need.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -207,7 +159,7 @@ export default function Home() {
             </div>
             <div className="text-center mt-12">
               <Button asChild>
-                <Link href="/products">View All Products</Link>
+                <Link href="/products">View All Profiles</Link>
               </Button>
             </div>
           </div>
@@ -217,9 +169,9 @@ export default function Home() {
         <section id="features" className="py-20 md:py-24 bg-card">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold">Why Choose Our uPVC Products?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold">Why Choose Our uPVC Profiles?</h2>
               <p className="mt-3 max-w-2xl mx-auto text-muted-foreground">
-                Experience the perfect blend of aesthetics, durability, and performance with our advanced uPVC solutions.
+                Experience the perfect blend of aesthetics, durability, and performance with our advanced uPVC profile solutions.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -8,21 +8,21 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 export default function ProductsPage() {
     const productCategories = [
       {
-        category: "Windows",
+        category: "Window Profiles",
         products: [
           {
-            title: 'Sliding Windows',
-            description: 'Sliding windows offer a sleek and modern solution for maximizing natural light and airflow. These windows glide horizontally along a track, making them effortless to operate and ideal for spaces with limited clearance. With a contemporary aesthetic and smooth functionality, sliding windows are a great addition to any home seeking a seamless connection between indoor and outdoor living.',
+            title: 'Sliding Window Profiles',
+            description: 'Our profiles for sliding windows offer a sleek, modern solution. They are designed for effortless operation and are ideal for spaces with limited clearance, creating a seamless connection between inside and out.',
             image: '/images/sliding-window-2.jpg'
           },
           {
-            title: 'Casement Windows',
-            description: 'Casement windows are a timeless and elegant choice for your home. These windows are hinged on one side and open outward with a smooth crank mechanism, allowing for excellent ventilation and easy cleaning. Their classic design adds a touch of sophistication to any space, while the energy-efficient features help keep your home comfortable year-round.',
+            title: 'Casement Window Profiles',
+            description: 'A timeless and elegant choice. Our profiles for casement windows are designed to be hinged on one side and open outward, allowing for excellent ventilation and easy cleaning.',
             image: '/images/casement-window-2.jpg'
           },
           {
-            title: 'Combination Windows',
-            description: 'These windows provide a flexible solution, enabling homeowners and builders to customize window openings to suit their unique requirements. They merge various window styles, such as casement with fixed windows or double-hung with picture windows, resulting in a single installation that enhances both adaptability and visual appeal.',
+            title: 'Combination Window Profiles',
+            description: 'Our combination profiles provide a flexible solution, enabling fabricators to create custom window openings by merging various styles, such as casement with fixed windows, in a single installation.',
             image: '/images/combination-window-2.jpg'
           },
         ]
@@ -69,13 +69,13 @@ export default function ProductsPage() {
         <section id="products" className="py-20 md:py-24 bg-card">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h1 className="text-3xl md:text-4xl font-bold">Our Product Range</h1>
+              <h1 className="text-3xl md:text-4xl font-bold">Our uPVC Profile Range</h1>
               <p className="mt-3 max-w-2xl mx-auto text-muted-foreground">
-                Explore our comprehensive collection of uPVC windows, designed to meet your every need.
+                Explore our comprehensive collection of uPVC profiles for windows and doors.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {productCategories.find(c => c.category === 'Windows')?.products.map((product, index) => (
+              {productCategories.find(c => c.category === 'Window Profiles')?.products.map((product, index) => (
                   <Card key={index} className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
                       <CardContent className="p-0">
                         <Image

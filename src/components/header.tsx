@@ -45,9 +45,11 @@ export function Header() {
 
         <div className="hidden md:flex items-center gap-2">
             <Button asChild>
-                <Link href="/brochure.pdf" download>
+                <Link href="/Brochure.pdf" download>
                 <Download className="mr-2 h-4 w-4" />
                 Download Brochure
+
+              
                 </Link>
             </Button>
         </div>
@@ -81,7 +83,7 @@ export function Header() {
               </nav>
               <div className="mt-auto">
                 <Button className="w-full" asChild>
-                    <Link href="/brochure.pdf" download>
+                    <Link href="/Brochure.pdf" download>
                         <Download className="mr-2 h-4 w-4" />
                         Download Brochure
                     </Link>
