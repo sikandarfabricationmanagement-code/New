@@ -10,6 +10,7 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { Logo } from './logo';
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -21,19 +22,14 @@ const navLinks = [
   { href: "#contact", label: "Contact Us" },
 ];
 
-const LogoPlaceholder = () => (
-  <div className="w-8 h-8 bg-primary rounded-full" />
-);
-
-
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="bg-background/80 backdrop-blur-sm sticky top-0 z-50 w-full border-b">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-3 font-bold text-2xl text-primary">
-          <LogoPlaceholder />
+        <Link href="/" className="flex items-center gap-3 font-bold text-3xl text-primary">
+          <Logo className="h-10 w-10" />
           Noaah
         </Link>
         
@@ -67,8 +63,8 @@ export function Header() {
           <SheetContent side="left">
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between border-b pb-4">
-                <Link href="/" className="flex items-center gap-3 font-bold text-2xl text-primary" onClick={() => setIsMenuOpen(false)}>
-                  <LogoPlaceholder />
+                <Link href="/" className="flex items-center gap-3 font-bold text-3xl text-primary" onClick={() => setIsMenuOpen(false)}>
+                  <Logo className="h-10 w-10" />
                   Noaah
                 </Link>
               </div>

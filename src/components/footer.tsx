@@ -3,10 +3,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-
-const LogoPlaceholder = () => (
-  <div className="w-8 h-8 bg-primary rounded-full" />
-);
+import { Logo } from './logo';
 
 export function Footer() {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
@@ -22,8 +19,8 @@ export function Footer() {
   return (
     <footer className="border-t bg-card">
       <div className="container mx-auto flex flex-col items-center justify-between gap-6 px-4 py-8 sm:flex-row">
-        <Link href="/" className="flex items-center gap-3 font-bold text-2xl text-primary">
-          <LogoPlaceholder />
+        <Link href="/" className="flex items-center gap-3 font-bold text-3xl text-primary">
+          <Logo className="h-10 w-10" />
           Noaah
         </Link>
         <p className="text-sm text-muted-foreground text-center">
