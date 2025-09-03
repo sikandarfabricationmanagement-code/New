@@ -17,8 +17,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
+import { type submitInquiry } from "@/ai/flows/inquiry-flow";
 
-const formSchema = z.object({
+const inquirySchema = z.object({
   name: z.string().min(2, {
     message: "Name must be at least 2 characters.",
   }),
@@ -33,11 +35,13 @@ const formSchema = z.object({
   }),
 });
 
+
 export function InquiryForm() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<z.infer<typeof inquirySchema>>({
+    resolver: zodResolver(inquirySchema),
     defaultValues: {
       name: "",
       email: "",
@@ -46,16 +50,29 @@ export function InquiryForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // In a real app, you would handle form submission here, e.g., send to an API endpoint.
-    console.log(values);
-    
-    toast({
-      title: "Inquiry Sent!",
-      description: "Thank you for your message. We'll be in touch soon.",
-    });
-    
-    form.reset();
+  async function onSubmit(values: z.infer<typeof inquirySchema>) {
+    setIsSubmitting(true);
+    try {
+      // In a real app, you would handle form submission here, e.g., send to an API endpoint.
+      const { submitInquiry } = await import('@/ai/flows/inquiry-flow');
+      await submitInquiry(values);
+      
+      toast({
+        title: "Inquiry Sent!",
+        description: "Thank you for your message. We'll be in touch soon.",
+      });
+      
+      form.reset();
+    } catch (error) {
+      console.error("Failed to submit inquiry:", error);
+      toast({
+        title: "Submission Failed",
+        description: "Sorry, we couldn't send your message. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -124,8 +141,8 @@ export function InquiryForm() {
                 </FormItem>
               )}
             />
-            <Button type="submit" className="w-full" disabled={form.formState.isSubmitting}>
-              {form.formState.isSubmitting ? 'Sending...' : 'Submit Inquiry'}
+            <Button type="submit" className="w-full" disabled={isSubmitting}>
+              {isSubmitting ? 'Sending...' : 'Submit Inquiry'}
             </Button>
           </form>
         </Form>
