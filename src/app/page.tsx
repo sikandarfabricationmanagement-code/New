@@ -73,7 +73,7 @@ export default function Home() {
         <section id="home" className="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center">
             <div className="absolute inset-0 bg-black/50 z-10" />
             <Image 
-                src="/images/hero.jpeg"
+                src="/images/hero.webp"
                 alt="Modern home with large uPVC windows"
                 fill
                 style={{ objectFit: 'cover' }}
